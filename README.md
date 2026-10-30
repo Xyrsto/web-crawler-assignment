@@ -197,7 +197,7 @@ Not built, on purpose, with a note on how each would be handled:
 | Multiple domains at once | A per-host scheduler with per-host politeness state and a global concurrency budget. |
 | Persistence and resume | Frontier and visited set backed by SQLite or Redis. |
 
-## What I would as a follow-up to the current implementation
+## What I would do as a follow-up to the current implementation
 
 - **Multi-domain crawling:** a scheduler keyed by host, with a queue and politeness state (pacing and robots rules) for each host. Each host could even be crawled in parallel by its own workers.
 - **A service instead of a CLI.** A CLI is not suited to multi-domain, scheduled or long-running crawls: one crash and all the progress is lost. A service that runs multiple jobs, streams results to storage and exposes metrics would suit a crawler better.
