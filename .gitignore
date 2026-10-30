@@ -1,0 +1,57 @@
+# Python bytecode and packaging
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+*.whl
+
+# Virtual environments (uv creates .venv; uv.lock IS tracked on purpose)
+.venv/
+venv/
+env/
+
+# Tool caches
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.hypothesis/
+
+# Test coverage
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Secrets and local configuration: never commit these
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+secrets.*
+credentials.*
+
+# IDEs and editors (PyCharm, VS Code, others)
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local AI assistant settings (personal, not for the repository)
+.claude/settings.local.json
+CLAUDE.local.md
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Crawler and benchmark output (examples in the README write these)
+*.jsonl
+pages.txt
+crawl.log
+*.log
